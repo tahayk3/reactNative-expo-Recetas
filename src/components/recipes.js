@@ -9,7 +9,7 @@ import MasonryList from '@react-native-seoul/masonry-list';
 import Animated, {FadeInDown} from 'react-native-reanimated';
 import Loading from "./loading";
 
-//import CachedImage from "../helpers/image";
+import CachedImage from "../helpers/image";
 
 //Metodo para cargar las recetas en base a la categoria
 //MasonryList es un componente para listar imagenes en diferentes tamaños, al estilo de Pinterest
@@ -49,10 +49,17 @@ const RecipeCard = ({item, index})=>{
             style={{width:'100%', paddingLeft: isEven? 0:8, paddingRight: isEven?8:0}}
             className="flex justify-center mb-4 space-y-1"
             >
-
+            {/*
             <Image
                 source={{uri:item.strMealThumb}}
                 style={{width: '100%', height: index%3==0? hp(25): hp(35), borderRadius: 35}}
+                className="bg-black/5"
+            />
+            */}
+
+            <CachedImage
+                uri={item.strMealThumb}
+                style={{ width: '100%', height: index % 3 === 0 ? hp(25) : hp(35), borderRadius: 35 }}
                 className="bg-black/5"
             />
 
