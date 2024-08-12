@@ -19,7 +19,7 @@ function WelcomeScreen() {
         ring2padding.value = 0;
         setTimeout(()=>ring1padding.value = withSpring(ring1padding.value+hp(3)),100);
         setTimeout(()=>ring2padding.value = withSpring(ring2padding.value+hp(3.5)),300);
-
+        {/* Al finalizar la animacion, se redirecciona a la pantalla de Home */}
         setTimeout(()=> navigation.navigate('Home'), 3000);
     },[]);
   return (
