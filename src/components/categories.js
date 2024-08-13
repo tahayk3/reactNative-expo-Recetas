@@ -10,11 +10,11 @@ import Animated, {FadeInDown} from 'react-native-reanimated';
 //Metodo para listar categorias, de manera horizontal
 function Categorias({categories, activeCategory, handleChangeCategory}){
     return(
-        <Animated.View entering={FadeInDown.duration(5000)}>
+        <Animated.View entering={FadeInDown.duration(3000)}>
             <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
-            className="space-x-4"
+            className="space-x-4 "
             contentContainerStyle={{paddingHorizontal:15}}
             >
             {categories.map((cat, index)=>{
@@ -25,6 +25,7 @@ function Categorias({categories, activeCategory, handleChangeCategory}){
                     key={index}
                     onPress={()=>handleChangeCategory(cat.strCategory)}
                     className="flex items-center space-y-1"
+                    style={{borderRadius: 35 }}
                     >
                         <View className={"rounded=full p-[6px]" +activeButtonClass}>
                             <Image

@@ -33,7 +33,9 @@
     "react-native-image-cache-wrapper": "^1.0.7",
     "react-native-reanimated": "~3.10.1",
     "react-native-responsive-screen": "^1.4.2",
-    "react-native-svg": "^15.2.0"
+    "react-native-svg": "^15.2.0",
+    "react-native-webview": "^13.8.6",
+    "react-native-youtube-iframe": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
