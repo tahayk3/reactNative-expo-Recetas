@@ -4,7 +4,7 @@
 
 # Esta se apoya de las siguientes librerías:
 - **react-native-reanimated**: se encarga de realizar animaciones
-- **@react-navigation/native**: se encarga de realizar saltos entre pantallas
+- **@react-navigation/native**: se encarga de realizar saltos entre pantallas y controlar rutas
 - **axios**: se utiliza para poder realizar solicitudes http a la api
 - **react-native-heroicon**: para agregar iconos en la api
 - **react-native-responsive-screen**: se utiliza para que la aplicacion se adapte el tamaño de pantalla de diferentes dipositivos
